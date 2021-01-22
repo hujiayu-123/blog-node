@@ -1,0 +1,52 @@
+@url = http://localhost:3000/blog/
+
+###
+
+POST {{url}}register
+Content-Type: application/json
+
+{
+  "name":"223",
+  "pwd":"123"
+}
+
+###
+
+POST {{url}}login
+Content-Type: application/json
+
+{
+  "name":"223",
+  "pwd":"123"
+}
+
+
+###
+
+POST {{url}}put
+Content-Type: application/json
+
+{
+  "title":"223",
+  "type":"123",
+  "article":"123"
+}
+
+###
+
+POST {{url}}article
+Content-Type: application/json
+
+{
+  "type":"js"
+}
+
+###
+
+DELETE {{url}}delete/5ef06cde0175780d84141d96
+
+###
+
+GET {{url}}userinfo
+Authorization: :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlZWQ2YzdiYTM0ZmNkMmFjODNhYzU0ZCIsImlhdCI6MTU5MjY0Mzc0MH0.wYV59SrnAGSEp_6_8JRPZYaPB-Syf-O-PM4kY1r4UK8
+
