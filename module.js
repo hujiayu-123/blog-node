@@ -17,9 +17,13 @@ const users = mongoose.model('users', userParam)
 const articleParam = new mongoose.Schema({
   title: { type: String },
   type: { type: String },
+  label: {type: Array},
+  articleText: {type: String},
   article: { type: String },
   author: { type: String },
   timeCreate: { type: String },
+  ids: {type: Number},
+  hits: {type: Number}
 })
 const articles = mongoose.model('articles', articleParam)
 
